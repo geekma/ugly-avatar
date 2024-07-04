@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "npm install",
+        "type": "shell",
+        "command": "npm install",
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "problemMatcher": [],
+        "detail": "Runs npm install"
+      },
+      {
+        "label": "serve",
+        "type": "shell",
+        "command": "npm run serve",
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "dependsOn": ["npm install"],
+        "problemMatcher": [],
+        "detail": "Runs npm run serve"
+      }
+    ]
+  }
+  
