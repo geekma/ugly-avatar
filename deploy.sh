@@ -7,6 +7,8 @@ set -e
 npm run build
 
 # run
+npm install && npm run serve
+
 npm run serve
 
 # navigate into the build output directory
